@@ -1,0 +1,14 @@
+local rep = game:GetService("ReplicatedStorage")
+local hallwaysFold = rep.Structures.Hallways
+local roomsFold = rep.Structures.Rooms
+local distance = 1.95
+local generate = require(rep.Generate)
+print("Sent")
+task.wait(3)
+generate.generate(distance)
+for loop = 1,15,1 do
+task.wait(0.75)
+generate.generate(distance)
+end
+
+print("End")
